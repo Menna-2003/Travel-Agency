@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>payment</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="payment.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body style="min-height: 130vb">
+        <nav class="navbar navbar-expand" id="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" alt="" width="80px" />
+                </a>
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active text-black" aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Tour Packages</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="accounts">
+                    <a href="#" id="log_in" class="text-black">log in</a>
+                    <button type="button" class="btn text-light">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <a href="userDetails.html" class="backBtn container text-decoration-none">
+            <i class="fa-solid fa-arrow-left" style="color: #b0b0b0"></i>
+            <span>Back</span>
+        </a>
+
+        <div class="progress w-50 h-auto m-1">
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #fa8b02; height: 5px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="buttons mt-5 mb-5">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+        </div>
+
+        <div class="container left_container d-grid justify-content-start">
+            <h4 class="mb-4">Select a payment method</h4>
+            <form action="">
+                <div class="method1 d-flex gap-4 p-3 mb-3">
+                    <input type="radio" id="payment1" name="payments" />
+                    <label class="d-flex align-items-center" for="payment1"
+                        ><h5>PayPal</h5>
+                        <p class="w-75 m-0">You will be redirected to the PayPal website after submitting your order</p>
+                        <img src="../images/PayPal.svg" alt=""
+                    /></label>
+                </div>
+                <div class="method2 p-3">
+                    <div class="d-flex gap-4">
+                        <input type="radio" id="payment2" name="payments" />
+                        <label class="d-flex align-items-center" for="payment2">
+                            <h5>Pay with Credit Card</h5>
+                            <div class="icons d-flex">
+                                <img src="../images/Visa.svg" alt="" />
+                                <img src="../images/Discover.svg" alt="" />
+                                <img src="../images/Maestro.svg" alt="" />
+                                <img src="../images/Mastercard.svg" alt="" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="cardDetails m-4">
+                        <div class="form-outline d-inline" data-mdb-input-init>
+                            <label for="ccn" id="ccnLabel">Card number</label>
+                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
+                        </div>
+
+                        <div class="form-outline d-inline ms-4" data-mdb-input-init>
+                            <label for="expirydate" id="expirydatelabel">Expiration Date</label>
+                            <input id="expirydate" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" placeholder="MM/YY" required />
+                        </div>
+
+                        <div class="form-outline mt-4" data-mdb-input-init>
+                            <label for="securityCode" id="securityCodeLabel">Card Security Code</label>
+                            <input id="securityCode" type="password" maxlength="6" placeholder="******" required />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="ticketOverview p-4 d-grid">
+            <h3>Your Tickets Overview</h3>
+            <div class="box d-flex mt-5 gap-4">
+                <img src="../images/tripPic.png" alt="" srcset="" />
+                <div class="text">
+                    <h5>Wine tasting In Tuscany</h5>
+                    <p><i class="fa-regular fa-calendar-days"></i>FRI, 23 DEC 2022</p>
+                    <p><i class="fa-regular fa-clock"></i>15:00</p>
+                </div>
+            </div>
+            <div class="details d-grid gap-4 mt-4">
+                <div class="one">
+                    <div class="circleCounter">2</div>
+                    <span>Adult (18+) (€32.00)</span>
+                    <span class="price">€64.00</span>
+                </div>
+                <div class="two">
+                    <div class="circleCounter">1</div>
+                    <span>Adult (18+) (€32.00)</span>
+                    <span class="price">€64.00</span>
+                </div>
+                <div class="three">
+                    <div class="circleCounter">1</div>
+                    <span>Adult (18+) (€32.00)</span>
+                    <span class="price">€64.00</span>
+                </div>
+                <div class="totalPrice">
+                    <span>Total Price</span>
+                    <span class="price">€86.00</span>
+                </div>
+            </div>
+            <button class="nextStepBtn w-75 mt-4"><a href="#">Confirm</a></button>
+        </div>
+
+        <script src="payment.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

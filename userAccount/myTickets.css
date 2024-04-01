@@ -1,0 +1,102 @@
+:root {
+    --base-color: #fa8b02;
+}
+
+#navbar .navbar-item .nav-link {
+    color: #e1e1e1;
+    position: relative;
+}
+#navbar .navbar-item .nav-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#navbar .navbar-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    background-color: var(--base-color);
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+#navbar .navbar-item .nav-link:hover::before {
+    visibility: visible;
+    width: 80%;
+}
+
+button,
+button.btn {
+    transition: all 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.accounts .btn {
+    background-color: var(--base-color);
+    margin: 0 10px;
+}
+#log_in {
+    color: white;
+    text-decoration: none;
+}
+
+/*  */
+/*  */
+/*  */
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+table tbody img {
+    width: 120px;
+    height: 90px;
+}
+
+table tbody td .d-grid {
+    align-content: center;
+    margin: 0px 30px;
+}
+table tbody td .d-grid h6,
+table tbody td .d-grid p {
+    margin: 5px;
+}
+table thead th {
+    color: #b4b4b4;
+}
+.container .row .col-sm img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+.container .row .col-sm span {
+    color: var(--base-color);
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 800;
+    font-size: larger;
+}
+.container .row .col-sm a {
+    text-decoration: none;
+    color: var(--base-color);
+    transition: all 0.5s;
+}
+
+/*  */
+/*  */
+/*  */
+
+.container .row .col-sm {
+    transition: all 0.5s;
+}
+.container .row .col-sm:hover {
+    transform: scale(1.06);
+}
+.container .row .col-sm:hover a {
+    transform: translateX(15px);
+}

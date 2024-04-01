@@ -1,0 +1,75 @@
+:root {
+    --base-color: #fa8b02;
+}
+.backgroundImg {
+    width: 100%;
+    height: 100vb;
+    position: absolute;
+    z-index: -1;
+}
+#navbar,
+.searching {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+.searching {
+    height: 150px;
+}
+.accounts .btn {
+    background-color: var(--base-color);
+    margin: 0 10px;
+}
+#log_in {
+    color: white;
+    text-decoration: none;
+}
+
+/* *********   ********    Details   ********   ******** */
+.backBtn {
+    cursor: pointer;
+}
+.backBtn span {
+    color: #b0b0b0;
+}
+.container .pictures .pic img {
+    width: 435px;
+}
+.container .pictures .threepic img {
+    width: 130px;
+}
+.container .pictures .threepic img:nth-child(2) {
+    margin: 15px 18px;
+}
+
+.container .details button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--base-color);
+    color: #fff;
+    border: 0;
+}
+.container .details #time,
+.container .details #datepicker {
+    width: 275px;
+    height: 50px;
+    padding: 0 7px 0 20px;
+    border: 1px solid #c7c7c7;
+    margin: 10px 0;
+}
+.details .price span {
+    color: var(--base-color);
+    font-size: xx-large;
+    font-weight: 700;
+    margin: 15px;
+}
+.container .features i {
+    color: var(--base-color);
+}
+.container .features .feature p span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer {
+    background-color: #333333;
+}
+.footer i {
+    color: var(--base-color);
+}

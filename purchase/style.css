@@ -1,0 +1,161 @@
+:root {
+    --base-color: #fa8b02;
+}
+
+#navbar .navbar-item .nav-link {
+    color: #e1e1e1;
+    position: relative;
+}
+#navbar .navbar-item .nav-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#navbar .navbar-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    background-color: var(--base-color);
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+#navbar .navbar-item .nav-link:hover::before {
+    visibility: visible;
+    width: 80%;
+}
+
+button,
+button.btn {
+    transition: all 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.accounts .btn {
+    background-color: var(--base-color);
+    margin: 0 10px;
+}
+#log_in {
+    color: white;
+    text-decoration: none;
+}
+.progress {
+    position: absolute;
+    top: 165px;
+    left: 380px;
+    z-index: -1;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons .one,
+.buttons .two,
+.buttons .three {
+    background-color: #eee;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.buttons .one::after,
+.buttons .two::after,
+.buttons .three::after {
+    content: "Booking Datails";
+    position: absolute;
+    top: 35px;
+    left: -45px;
+    width: 125px;
+    text-align: center;
+    color: #eee;
+}
+.buttons .two::after {
+    content: "Your Datails";
+}
+.buttons .three::after {
+    content: "Payment";
+}
+
+.backBtn {
+    cursor: pointer;
+    position: absolute;
+    width: 200px;
+    top: 140px;
+    left: 80px;
+    transition: all 0.3s;
+}
+.backBtn:hover {
+    transform: scale(1.05);
+}
+.backBtn span {
+    color: #b0b0b0;
+}
+
+/* -------------------------------------------------------- */
+
+.ticketOverview {
+    position: absolute;
+    right: 100px;
+    top: 300px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: 500px;
+    height: 550px;
+    justify-items: center;
+    transition: all 0.5s;
+}
+.ticketOverview:hover {
+    transform: scale(1.06);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.ticketOverview .box i {
+    color: var(--base-color);
+    margin: 0 10px 0 0;
+}
+.ticketOverview .box img {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+}
+.ticketOverview .details .circleCounter {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticketOverview .details .price {
+    margin-left: 200px;
+    font-weight: 500;
+}
+.ticketOverview .details .totalPrice .price {
+    margin-left: 275px;
+    color: var(--base-color);
+}
+.ticketOverview .details .totalPrice span:first-child {
+    font-size: 20px;
+}
+.ticketOverview .nextStepBtn {
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--base-color);
+    color: white;
+}
+.ticketOverview .nextStepBtn a {
+    text-decoration: none;
+    color: #fff;
+}

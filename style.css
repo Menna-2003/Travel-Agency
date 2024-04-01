@@ -1,0 +1,254 @@
+:root {
+    --base-color: #fa8b02;
+}
+button,
+button.btn {
+    transition: all 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.backgroundImg {
+    width: 100%;
+    height: 100vb;
+    position: absolute;
+    z-index: -1;
+}
+#navbar,
+.searching {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+#navbar .navbar-item .nav-link {
+    color: #e1e1e1;
+    position: relative;
+}
+#navbar .navbar-item .nav-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#navbar .navbar-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    background-color: #fff;
+    width: 0%;
+    height: 2px;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+#navbar .navbar-item .active::before {
+    visibility: visible;
+    width: 80%;
+}
+
+#navbar .navbar-item .nav-link:hover::before {
+    visibility: visible;
+    width: 80%;
+}
+
+.searching {
+    height: 150px;
+}
+.accounts .btn {
+    background-color: var(--base-color);
+    margin: 0 10px;
+}
+#log_in {
+    color: white;
+    text-decoration: none;
+}
+.first {
+    font-family: "Dancing Script";
+    font-size: 70px;
+}
+.container-searching {
+    margin-top: 5%;
+    width: 900px;
+    min-height: 72vb;
+}
+.innersearching {
+    background-color: #fff;
+    height: 75px;
+    margin-top: 56px;
+}
+#public {
+    background-color: #fff;
+}
+#public,
+#private {
+    position: absolute;
+    top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#private {
+    left: 143px;
+}
+.innertext {
+    position: relative;
+}
+.search-icon {
+    background-color: #fa8b02;
+    margin: 11px;
+}
+.label {
+    background-color: #fff;
+}
+
+/* *************  bike reservation  **************** */
+
+.bike-reservation {
+    margin: 80px 0;
+    background-image: url(images/bg.png);
+    height: 70vb;
+}
+.bike-reservation .container.inner {
+    background-color: rgb(255, 255, 255, 0.3);
+    /* width: 60%; */
+    padding: 25px 55px;
+}
+.bike-reservation .container.outer {
+    justify-content: start;
+    align-content: space-evenly;
+}
+.bike-reservation .bike {
+    position: relative;
+}
+.bike-reservation .bike img {
+    width: 600px;
+    position: absolute;
+    left: -730px;
+    top: 70px;
+}
+.bike-reservation .inner .col.d-grid {
+    justify-items: left;
+    gap: 5px;
+}
+.bike-reservation .inner input,
+.bike-reservation .inner select {
+    padding: 6px 10px;
+    margin-bottom: 20px;
+}
+#date,
+#time,
+#service {
+    width: 200px;
+    height: 36px;
+}
+#submit-btn {
+    background-color: var(--base-color);
+    padding: 7px;
+}
+
+/* ******************   Package  **************************** */
+
+.details img {
+    width: 40px;
+}
+.details .row {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.packages .container {
+    gap: 35px;
+}
+.packages .container .box {
+    height: 550px;
+    transition: all 0.3s;
+}
+.packages .container .box:hover {
+    transform: scale(1.15);
+}
+.packages .container .box .pic {
+    margin: -15px 0 0 -16px;
+}
+.packages .container .box .bookP {
+    border: 1px solid var(--base-color);
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    height: 40px;
+    color: var(--base-color);
+}
+.packages .container .box button {
+    transition: all 0.3s;
+}
+.packages .container .box button:hover {
+    color: #fff;
+    background-color: var(--base-color);
+}
+
+/* ******************   distinations  **************************** */
+.distinations {
+    margin: 80px 0;
+}
+.distinations .arrows .left:hover,
+.distinations .arrows .right:hover {
+    transform: scale(1.09);
+}
+.distinations .arrows .left,
+.distinations .arrows .right {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.distinations .arrows .right {
+    background-color: var(--base-color);
+    color: white;
+}
+.distinations .arrows .left {
+    background-color: #eee;
+    color: #8b8b8b;
+}
+.distinations .frame {
+    border: solid white;
+    border-width: 0px 110px;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.distinations .frame .content {
+    position: absolute;
+    gap: 25px;
+    top: 10%;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+.distinations .frame .content .box img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+.distinations .frame .content .box {
+    transition: all 0.3s;
+}
+.distinations .frame .content .box:hover {
+    transform: scale(1.05);
+}
+.distinations .frame .content .box span {
+    color: var(--base-color);
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 800;
+    font-size: larger;
+}
+.distinations .frame .content .box a {
+    text-decoration: none;
+    color: var(--base-color);
+}
