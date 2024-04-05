@@ -9,12 +9,7 @@ button:hover {
     transform: scale(1.05);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.backgroundImg {
-    width: 100%;
-    height: 100vb;
-    position: absolute;
-    z-index: -1;
-}
+
 #navbar,
 .searching {
     background-color: rgb(255, 255, 255, 0.4);
@@ -96,8 +91,47 @@ button:hover {
     background-color: #fa8b02;
     margin: 11px;
 }
-.label {
+/* .label {
     background-color: #fff;
+} */
+span.btn {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    z-index: 500;
+    display: none;
+}
+span.btn i {
+    font-size: 45px;
+    color: #fff;
+}
+.homeContainer {
+    background-image: url(images/backGroundImg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vb;
+}
+@media (max-width: 780px) {
+    span.btn {
+        display: inline;
+    }
+    #navbar .navbar-nav {
+        display: none;
+    }
+    #navbar .accounts {
+        display: none;
+    }
+    .innersearching {
+        flex-wrap: wrap;
+    }
+    .searching {
+        height: 270px;
+    }
+    .search-icon {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
 }
 
 /* *************  bike reservation  **************** */
@@ -143,6 +177,23 @@ button:hover {
 #submit-btn {
     background-color: var(--base-color);
     padding: 7px;
+    width: 25%;
+}
+@media (max-width: 780px) {
+    .bike-reservation .bike img {
+        display: none;
+    }
+    .bike-reservation input {
+        width: 310px;
+    }
+    #date,
+    #time,
+    #service {
+        width: 310px;
+    }
+    .bike-reservation #submit-btn {
+        width: 80%;
+    }
 }
 
 /* ******************   Package  **************************** */
@@ -160,6 +211,7 @@ button:hover {
 .packages .container .box {
     height: 550px;
     transition: all 0.3s;
+    overflow: hidden;
 }
 .packages .container .box:hover {
     transform: scale(1.15);
@@ -182,6 +234,14 @@ button:hover {
 .packages .container .box button:hover {
     color: #fff;
     background-color: var(--base-color);
+}
+.packages .packagesCont {
+    display: flex;
+}
+@media (max-width: 780px) {
+    .packages .packagesCont {
+        display: grid;
+    }
 }
 
 /* ******************   distinations  **************************** */
@@ -251,4 +311,29 @@ button:hover {
 .distinations .frame .content .box a {
     text-decoration: none;
     color: var(--base-color);
+}
+
+.footer {
+    background-color: #333333;
+}
+.footer i {
+    color: var(--base-color);
+}
+
+@media (max-width: 780px) {
+    .distinations .frame {
+        border-width: 0px 78px;
+    }
+}
+
+/* *************  bike reservation  **************** */
+
+.footerCont {
+    display: flex;
+}
+
+@media (max-width: 780px) {
+    .footerCont {
+        display: grid;
+    }
 }
