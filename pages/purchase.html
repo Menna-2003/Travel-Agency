@@ -6,6 +6,7 @@
         <title>Purchase</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/purchase.css" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
@@ -25,6 +26,37 @@
         />
     </head>
     <body>
+        <span class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></span>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" alt="" width="80px" />
+                </a>
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active text-black" aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Tour Packages</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="accounts">
+                    <a href="#" id="log_in" class="text-black">log in</a>
+                    <button type="button" class="btn text-light">Sign Up</button>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand" id="navbar">
             <div class="container">
                 <a href="#" class="navbar-brand">
@@ -50,8 +82,8 @@
                 </div>
             </div>
         </nav>
-        
-        <a href="../index.html" class="backBtn container text-decoration-none">
+
+        <a href="../index.html" class="backBtn w-25 container text-decoration-none">
             <i class="fa-solid fa-arrow-left" style="color: #b0b0b0"></i>
             <span>Back</span>
         </a>
@@ -69,26 +101,26 @@
         <div class="container d-flex">
             <div class="left container mt-5">
                 <label for="date">When you will visit?</label>
-                <select class="form-select w-50 mt-4 mb-4" id="date" aria-label="Default select example">
+                <select class="form-select mt-4 mb-4" id="date" aria-label="Default select example">
                     <option value="1" selected>One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
 
                 <label for="time">Which time?</label>
-                <select class="form-select w-50 mt-4 mb-4" id="time" aria-label="Default select example">
+                <select class="form-select mt-4 mb-4" id="time" aria-label="Default select example">
                     <option value="1" selected>One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
 
                 <h4 class="mt-5">Select Your Tickets</h4>
-                <p class="w-50 bg-light p-3">
+                <p class="bg-light p-3">
                     Free for kids under 6 and disabled visitors (74%+) <br />
                     Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at the venue
                 </p>
-                <div class="option d-flex justify-content-between w-50 p-3 mt-3">
-                    <div class="text w-50">
+                <div class="option d-flex justify-content-between p-3 mt-3">
+                    <div class="text">
                         <h5>Adult (18+)</h5>
                         <p>$34.00</p>
                     </div>
@@ -98,8 +130,8 @@
                         <span class="plus">+</span>
                     </div>
                 </div>
-                <div class="option d-flex justify-content-between w-50 p-3 mt-3">
-                    <div class="text w-50">
+                <div class="option d-flex justify-content-between p-3 mt-3">
+                    <div class="text">
                         <h5>Child (6-17)</h5>
                         <p>$34.00</p>
                     </div>
@@ -109,8 +141,8 @@
                         <span class="plus">+</span>
                     </div>
                 </div>
-                <div class="option d-flex justify-content-between w-50 p-3 mt-3 mb-5">
-                    <div class="text w-50">
+                <div class="option d-flex justify-content-between p-3 mt-3 mb-5">
+                    <div class="text">
                         <h5>Infant (0-5)</h5>
                         <p>$34.00</p>
                     </div>

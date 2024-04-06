@@ -45,6 +45,10 @@ button:hover {
     color: white;
     text-decoration: none;
 }
+span.btn i {
+    font-size: 45px;
+    color: #000;
+}
 
 /*  */
 /*  */

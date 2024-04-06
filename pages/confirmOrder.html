@@ -6,6 +6,7 @@
         <title>Confirmation</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../style.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/confirmOrder.css" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
@@ -25,6 +26,38 @@
         />
     </head>
     <body>
+        <span class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></span>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" alt="" width="80px" />
+                </a>
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active text-black" aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Tour Packages</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="accounts">
+                    <a href="#" id="log_in" class="text-black">log in</a>
+                    <button type="button" class="btn text-light">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        
         <nav class="navbar navbar-expand" id="navbar">
             <div class="container">
                 <a href="#" class="navbar-brand">

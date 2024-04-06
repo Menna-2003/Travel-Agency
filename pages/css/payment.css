@@ -68,8 +68,41 @@
 #expirydatelabel {
     left: 260px;
 }
-#securityCodeLabel{
+#securityCodeLabel {
     top: 64px;
     left: 10px;
     width: 160px;
+}
+
+@media (max-width: 780px) {
+    .left_container form {
+        max-width: 404px;
+    }
+    .left_container .method1,
+    .left_container .method2 {
+        width: 80%;
+    }
+    #expirydatelabel {
+        left: 17px;
+        top: 100px;
+    }
+    #securityCodeLabel {
+        top: 195px;
+    }
+    #ccnLabel {
+        top: 8px;
+    }
+    .cardDetails input {
+        /* width: 220px;
+        height: 54px;
+        padding: 25px 24px;
+        border-radius: 10px;
+        border: 1px solid #c0c0c0;
+        outline: none; */
+        margin: 20px 0;
+    }
+    .method2 label,
+    .method2 label h5 {
+        width: 200px;
+    }
 }

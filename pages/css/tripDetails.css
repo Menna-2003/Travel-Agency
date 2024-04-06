@@ -22,7 +22,39 @@
     color: white;
     text-decoration: none;
 }
-
+span.btn {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    z-index: 500;
+    display: none;
+}
+span.btn i {
+    font-size: 45px;
+    color: #000;
+}
+@media (max-width: 780px) {
+    span.btn {
+        display: inline;
+    }
+    #navbar .navbar-nav {
+        display: none;
+    }
+    #navbar .accounts {
+        display: none;
+    }
+    .innersearching {
+        flex-wrap: wrap;
+    }
+    .searching {
+        height: 270px;
+    }
+    .search-icon {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+}
 /* *********   ********    Details   ********   ******** */
 .backBtn {
     cursor: pointer;
@@ -34,10 +66,14 @@
     width: 435px;
 }
 .container .pictures .threepic img {
-    width: 130px;
+    max-width: 130px;
 }
 .container .pictures .threepic img:nth-child(2) {
     margin: 15px 18px;
+}
+
+.Box1 {
+    display: flex;
 }
 
 .container .details button {
@@ -72,4 +108,16 @@
 }
 .footer i {
     color: var(--base-color);
+}
+@media (max-width: 780px) {
+    .container .pictures .pic img {
+        width: 331px;
+    }
+    .Box1 {
+        display: grid;
+        gap: 50px;
+    }
+    .container .pictures .threepic img {
+        max-width: 95px;
+    }
 }

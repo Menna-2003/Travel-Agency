@@ -6,6 +6,7 @@
         <title>payment</title>
 
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../style.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/payment.css" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
@@ -25,6 +26,37 @@
         />
     </head>
     <body style="min-height: 130vb">
+        <span class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></span>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" alt="" width="80px" />
+                </a>
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active text-black" aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Tour Packages</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="accounts">
+                    <a href="#" id="log_in" class="text-black">log in</a>
+                    <button type="button" class="btn text-light">Sign Up</button>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand" id="navbar">
             <div class="container">
                 <a href="#" class="navbar-brand">
@@ -51,7 +83,7 @@
             </div>
         </nav>
 
-        <a href="userDetails.html" class="backBtn container text-decoration-none">
+        <a href="userDetails.html" class="backBtn w-25 container text-decoration-none">
             <i class="fa-solid fa-arrow-left" style="color: #b0b0b0"></i>
             <span>Back</span>
         </a>
@@ -67,9 +99,9 @@
         </div>
 
         <div class="container left_container d-grid justify-content-start">
-            <h4 class="mb-4">Select a payment method</h4>
+            <h4 class="mb-4" style="max-width: 300px">Select a payment method</h4>
             <form action="">
-                <div class="method1 d-flex gap-4 p-3 mb-3">
+                <div class="method1 w-auto d-flex gap-4 p-3 mb-3">
                     <input type="radio" id="payment1" name="payments" />
                     <label class="d-flex align-items-center" for="payment1"
                         ><h5>PayPal</h5>
@@ -77,11 +109,11 @@
                         <img src="../images/PayPal.svg" alt=""
                     /></label>
                 </div>
-                <div class="method2 p-3">
+                <div class="method2 p-3 w-auto overflow-hidden">
                     <div class="d-flex gap-4">
                         <input type="radio" id="payment2" name="payments" />
-                        <label class="d-flex align-items-center" for="payment2">
-                            <h5>Pay with Credit Card</h5>
+                        <label class="d-flex flex-wrap align-items-center" for="payment2">
+                            <h5 style="min-width: 200px">Pay with Credit Card</h5>
                             <div class="icons d-flex">
                                 <img src="../images/Visa.svg" alt="" />
                                 <img src="../images/Discover.svg" alt="" />
@@ -101,7 +133,7 @@
                             <input id="expirydate" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" placeholder="MM/YY" required />
                         </div>
 
-                        <div class="form-outline mt-4" data-mdb-input-init>
+                        <div class="form-outline mt-lg-4" data-mdb-input-init>
                             <label for="securityCode" id="securityCodeLabel">Card Security Code</label>
                             <input id="securityCode" type="password" maxlength="6" placeholder="******" required />
                         </div>

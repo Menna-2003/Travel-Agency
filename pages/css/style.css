@@ -101,6 +101,27 @@ button:hover {
 .backBtn span {
     color: #b0b0b0;
 }
+span.btn i {
+    font-size: 45px;
+    color: #000;
+}
+span.btn{
+    right: 20px;
+}
+@media (max-width: 780px) {
+    .progress {
+        /* display: none; */
+        position: absolute;
+        top: -50px;
+    }
+    .buttons {
+        display: flex;
+        gap: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 
 /* -------------------------------------------------------- */
 
@@ -158,4 +179,17 @@ button:hover {
 .ticketOverview .nextStepBtn a {
     text-decoration: none;
     color: #fff;
+}
+@media (max-width: 780px) {
+    .ticketOverview {
+        position: inherit;
+        margin: 0 0 50px -34px;
+        /* top: 1200px;
+        left: -38px; */
+        transform: scale(0.8);
+    }
+    .backBtn {
+        top: 135px;
+        left: 10px;
+    }
 }

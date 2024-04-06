@@ -24,6 +24,38 @@
         />
     </head>
     <body>
+        <span class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></span>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" alt="" width="80px" />
+                </a>
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active text-black" aria-current="page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Tour Packages</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-black">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="accounts">
+                    <a href="#" id="log_in" class="text-black">log in</a>
+                    <button type="button" class="btn text-light">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand" id="navbar">
             <div class="container">
                 <a href="#" class="navbar-brand">
@@ -49,13 +81,13 @@
                 </div>
             </div>
         </nav>
-
+        
         <div class="container mt-5">
             <a href="tourPackages.html" class="backBtn container text-decoration-none">
                 <i class="fa-solid fa-arrow-left" style="color: #b0b0b0"></i>
                 <span>Back</span>
             </a>
-            <div class="container mt-3 d-flex">
+            <div class="container Box1 mt-3">
                 <div class="container pictures">
                     <div class="pic">
                         <img src="../images/tour packages/Gardaland.png" alt="" srcset="" />
@@ -121,7 +153,7 @@
             <div class="container logo">
                 <img src="../images/logo.png" alt="" srcset="" />
             </div>
-            <div class="container d-flex justify-content-between border-bottom border-top pb-5 pt-5 mt-3 mb-3">
+            <div class="container footerCont justify-content-between border-bottom border-top pb-5 pt-5 mt-3 mb-3">
                 <div class="services">
                     <h5>Services</h5>
                     <ul class="list-unstyled mt-4">

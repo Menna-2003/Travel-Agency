@@ -13,6 +13,12 @@
     font-size: 25px;
     font-weight: 500;
 }
+.container .left select,
+.container .left p,
+.container .left .option .text,
+.container .left .option {
+    width: 50%;
+}
 .qty .count {
     display: inline-block;
     vertical-align: top;
@@ -75,4 +81,15 @@ input:disabled {
 
 .container .left .option p {
     color: var(--base-color);
+}
+@media (max-width: 780px) {
+    .container .left select {
+        width: 100%;
+    }
+    .container .left select,
+    .container .left p,
+    .container .left .option .text,
+    .container .left .option {
+        width: 100%;
+    }
 }
