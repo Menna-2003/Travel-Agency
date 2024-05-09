@@ -9,10 +9,6 @@
 }
 
 /* -**************------------***************----- */
-.container .left label {
-    font-size: 25px;
-    font-weight: 500;
-}
 .container .left select,
 .container .left p,
 .container .left .option .text,

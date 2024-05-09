@@ -65,12 +65,6 @@ span.btn i {
 .container .pictures .pic img {
     width: 435px;
 }
-.container .pictures .threepic img {
-    max-width: 130px;
-}
-.container .pictures .threepic img:nth-child(2) {
-    margin: 15px 18px;
-}
 
 .Box1 {
     display: flex;
@@ -83,14 +77,16 @@ span.btn i {
     color: #fff;
     border: 0;
 }
-.container .details #time,
-.container .details #datepicker {
+.container .details #groupSize,
+.container .details #transportationType {
     width: 275px;
     height: 50px;
     padding: 0 7px 0 20px;
     border: 1px solid #c7c7c7;
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
+    display: block;
 }
+
 .details .price span {
     color: var(--base-color);
     font-size: xx-large;

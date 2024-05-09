@@ -67,13 +67,13 @@
                             <a href="#" class="nav-link active text-light" aria-current="page">Home</a>
                         </li>
                         <li class="navbar-item">
+                            <a href="pages/tourPackages.html" class="nav-link">Tour Packages</a>
+                        </li>
+                        <li class="navbar-item">
                             <a href="#" class="nav-link">About Us</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">Tour Packages</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#" class="nav-link">Contact Us</a>
+                            <a href="#footer" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                     <div class="accounts">
@@ -88,59 +88,53 @@
                     <h1 class="first text-center text-light">Enjoy in the best way</h1>
                     <p class="text-center text-light">Enjoy our services for your trip anytime</p>
                 </div>
-                <div class="container rounded-3 searching position-relative">
-                    <div class="d-flex innertext">
-                        <div id="public" class="rounded-3">
-                            <img src="images/earth.png" />
-                            <p class="d-inline">Public Tour</p>
-                        </div>
-                        <div id="private" class="rounded-top">
-                            <img src="images/groupofpeople.png" />
-                            <p class="d-inline text-light">Private Tour</p>
-                        </div>
-                    </div>
+                <div class="container d-grid rounded-3 searching position-relative">
+                    <div class="innertext text-light text-center pt-3">Filter Trips</div>
                     <div class="d-flex innersearching rounded-top">
                         <select class="form-select border-0" aria-label="Default select example">
-                            <option selected>Number of people</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <select class="form-select border-0" aria-label="Default select example">
                             <option selected>Date</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="jan">jan</option>
+                            <option value="feb">feb</option>
+                            <option value="march">march</option>
                         </select>
                         <select class="form-select border-0" aria-label="Default select example">
-                            <option selected>Time</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected>Minimum Price</option>
+                            <option>$50</option>
+                            <option>$100</option>
+                            <option>$500</option>
+                            <option>$1000</option>
+                            <option>$1500</option>
+                            <option>$2000</option>
+                            <option>$5000</option>
                         </select>
                         <select class="form-select border-0" aria-label="Default select example">
-                            <option selected>Tour</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected>Maximum Price</option>
+                            <option>$50</option>
+                            <option>$100</option>
+                            <option>$500</option>
+                            <option>$1000</option>
+                            <option>$1500</option>
+                            <option>$2000</option>
+                            <option>$5000</option>
                         </select>
                         <select class="form-select border-0" aria-label="Default select example">
                             <option selected>Transportation</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="1">Tok Tok</option>
+                            <option value="2">Bike</option>
+                            <option value="3">Bus</option>
+                            <option value="4">Private Car</option>
                         </select>
-                        <div class="search-icon d-flex justify-content-center align-items-center rounded-3">
+                        <button class="search-icon d-flex justify-content-center align-items-center rounded-3">
                             <i class="bi bi-search" style="color: white; font-size: 25px; padding: 0px 15px"></i>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="distinations">
+        <div class="popularTrips">
             <div class="container header d-flex justify-content-between">
-                <h3>Explore Our Popular Destinantions</h3>
+                <h3>Explore Our Popular Trips</h3>
                 <div class="arrows d-flex justify-content-end gap-3">
                     <div class="left">&lt;</div>
                     <div class="right">&gt;</div>
@@ -148,211 +142,208 @@
             </div>
             <div class="frame">
                 <div class="content d-flex">
-                    <div class="box d-grid">
-                        <img src="images/tour packages/lucaBikeTour.png" alt="" />
-                        <h6>luca Bike Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/lucaBikeTour.png" alt="" />
+                            <h6 class="text-black">luca Bike Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/CinqueTerre.png" alt="" />
-                        <h6>Cinque Terre Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/CinqueTerre.png" alt="" />
+                            <h6 class="text-black">Cinque Terre Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Florence.png" alt="" />
-                        <h6>Florence</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/Florence.png" alt="" />
+                            <h6 class="text-black">Florence</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Gardaland.png" alt="" />
-                        <h6>Gardaland Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/Gardaland.png" alt="" />
+                            <h6 class="text-black">Gardaland Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/lucaBikeTour.png" alt="" />
-                        <h6>luca Bike Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/lucaBikeTour.png" alt="" />
+                            <h6 class="text-black">luca Bike Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/CinqueTerre.png" alt="" />
-                        <h6>Cinque Terre Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/lucaBikeTour.png" alt="" />
+                            <h6 class="text-black">luca Bike Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Florence.png" alt="" />
-                        <h6>Florence</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/CinqueTerre.png" alt="" />
+                            <h6 class="text-black">Cinque Terre Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Gardaland.png" alt="" />
-                        <h6>Gardaland Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/Florence.png" alt="" />
+                            <h6 class="text-black">Florence</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/lucaBikeTour.png" alt="" />
-                        <h6>luca Bike Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/Gardaland.png" alt="" />
+                            <h6 class="text-black">Gardaland Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/CinqueTerre.png" alt="" />
-                        <h6>Cinque Terre Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
+                    </a>
+                    <a href="#">
+                        <div class="box d-grid">
+                            <img src="images/tour packages/lucaBikeTour.png" alt="" />
+                            <h6 class="text-black">luca Bike Tour</h6>
+                            <p class="text-black">from <span>30$</span></p>
+                            <div class="d-flex gap-5 text-black">
+                                <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
+                                <p><i class="bi bi-people-fill"></i>10-30</p>
+                            </div>
+                            <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Florence.png" alt="" />
-                        <h6>Florence</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
-                        </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="box d-grid">
-                        <img src="images/tour packages/Gardaland.png" alt="" />
-                        <h6>Gardaland Tour</h6>
-                        <p>from <span>30$</span></p>
-                        <div class="d-flex gap-5">
-                            <p><i class="bi bi-calendar3"></i> EVERY DAY</p>
-                            <p><i class="bi bi-people-fill"></i>10-30</p>
-                        </div>
-                        <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="bike-reservation text-center d-flex">
-            <div class="container outer d-grid">
-                <div class="row justify-content-center fw-bolder fs-3">Book Now Bike</div>
-                <div class="row">
-                    <div class="container inner rounded-3">
-                        <div class="row">
-                            <div class="col d-grid">
-                                <label for="name">Name and SurName</label>
-                                <input type="text" id="name" class="rounded-3 border-0" placeholder="Enter your full Name" />
+        <div class="ReservationContainer">
+            <div class="text-center">
+                <button class="btn bike active">Bike</button>
+                <button class="btn car">Car</button>
+            </div>
+            <div class="bikeCar-reservation text-center d-flex">
+                <div class="container outer d-grid">
+                    <div class="row justify-content-center fw-bolder fs-3 title">Book Now Bike</div>
+                    <div class="row">
+                        <div class="container inner rounded-3">
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <label for="name">Name and SurName</label>
+                                    <input type="text" id="name" class="rounded-3 border-0" placeholder="Enter your full Name" />
+                                </div>
+                                <div class="col d-grid">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" class="rounded-3 border-0" placeholder="Enter your Email" />
+                                </div>
                             </div>
-                            <div class="col d-grid">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" class="rounded-3 border-0" placeholder="Enter your Email" />
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <label for="phone">Telephone Number</label>
+                                    <input type="tel" id="phone" class="rounded-3 border-0" placeholder="Enter your phone number" />
+                                </div>
+                                <div class="col d-grid">
+                                    <label for="type">Type</label>
+                                    <select name="Type" id="type" class="rounded-3 border-0">
+                                        <option value="" selected>Select type</option>
+                                        <option value="">one</option>
+                                        <option value="">two</option>
+                                        <option value="">three</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-grid">
-                                <label for="phone">Telephone Number</label>
-                                <input type="tel" id="phone" class="rounded-3 border-0" placeholder="Enter your phone number" />
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" class="rounded-3 border-0" />
+                                </div>
+                                <div class="col d-grid">
+                                    <label for="time">Time</label>
+                                    <input type="time" id="time" class="rounded-3 border-0" />
+                                </div>
                             </div>
-                            <div class="col d-grid">
-                                <label for="service">Service Type</label>
-                                <select name="service" id="service" class="rounded-3 border-0">
-                                    <option value="" selected>Select service type</option>
-                                    <option value="">one</option>
-                                    <option value="">two</option>
-                                    <option value="">three</option>
-                                </select>
+                            <div class="row justify-content-center">
+                                <button class="rounded-3 border-0 text-light" id="submit-btn">Book Now</button>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-grid">
-                                <label for="date">Date</label>
-                                <input type="date" id="date" class="rounded-3 border-0" />
-                            </div>
-                            <div class="col d-grid">
-                                <label for="time">Time</label>
-                                <input type="time" id="time" class="rounded-3 border-0" />
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <button class="rounded-3 border-0 text-light" id="submit-btn">Book Now</button>
                         </div>
                     </div>
                 </div>
+                <div class="bike car">
+                    <img src="images/bike-picture.png" class="bike" alt="" srcset="" />
+                    <img src="images/car.png" class="car" alt="" srcset="" />
+                </div>
             </div>
-            <div class="bike">
-                <img src="images/bike-picture.png" alt="" srcset="" />
-            </div>
+            <a href="#" class="privateTrip">Do You Want a Private Trip?</a>
         </div>
 
-        <div class="packages container">
-            <h3 class="m-5">The Most Popular Packages</h3>
-            <div class="container packagesCont justify-content-center">
+        <div class="transportations container">
+            <h3 class="m-5">Transportations</h3>
+            <div class="container packagesCont transportationsCont justify-content-center">
                 <div class="box d-grid shadow p-3 mb-5 bg-white rounded" style="width: 265px">
                     <img class="pic" src="images/toktok.png" alt="" style="width: 265px" />
-                    <h5>BIKE / RICKSHAW</h5>
-                    <h2>10</h2>
+                    <h5>Tok Tok</h5>
+                    <h2>$10</h2>
                     <div class="details container">
                         <div class="row d-flex">
                             <img src="images/calender.png" alt="" />
-                            <div>Your bike for a day</div>
+                            <div>Your Tok Tok for a day</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/map.png" alt="" />
-                            <div>City App</div>
+                            <div>Inside City</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/ticket.png" alt="" />
-                            <div>Discount on Rickshaw</div>
+                            <div>Discount on group</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/support.png" alt="" />
@@ -363,8 +354,8 @@
                 </div>
                 <div class="box d-grid shadow p-3 mb-5 bg-white rounded" style="width: 265px">
                     <img class="pic" src="images/bikeTour.png" alt="" style="width: 265px" />
-                    <h5>BIKE Tour</h5>
-                    <h2>10</h2>
+                    <h5>Bike</h5>
+                    <h2>$15</h2>
                     <div class="details container">
                         <div class="row d-flex">
                             <img src="images/calender.png" alt="" />
@@ -372,11 +363,11 @@
                         </div>
                         <div class="row d-flex">
                             <img src="images/map.png" alt="" />
-                            <div>City App</div>
+                            <div>Inside City</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/ticket.png" alt="" />
-                            <div>Discount on Rickshaw</div>
+                            <div>Discount on group</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/support.png" alt="" />
@@ -387,20 +378,20 @@
                 </div>
                 <div class="box d-grid shadow p-3 mb-5 bg-white rounded" style="width: 265px">
                     <img class="pic" src="images/bus.png" alt="" style="width: 265px; height: 264px" />
-                    <h5>Bus Trip</h5>
-                    <h2>10</h2>
+                    <h5>Bus</h5>
+                    <h2>$100</h2>
                     <div class="details container">
                         <div class="row d-flex">
                             <img src="images/calender.png" alt="" />
-                            <div>Your bike for a day</div>
+                            <div>Your Bus for a day</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/map.png" alt="" />
-                            <div>City App</div>
+                            <div>Inside and Outside City</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/ticket.png" alt="" />
-                            <div>Discount on Rickshaw</div>
+                            <div>Discount on group</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/support.png" alt="" />
@@ -411,20 +402,20 @@
                 </div>
                 <div class="box d-grid shadow p-3 mb-5 bg-white rounded" style="width: 265px">
                     <img class="pic" src="images/transfer.png" alt="" style="width: 265px" />
-                    <h5>Transfer</h5>
-                    <h2>10</h2>
+                    <h5>Private Car</h5>
+                    <h2>$60</h2>
                     <div class="details container">
                         <div class="row d-flex">
                             <img src="images/calender.png" alt="" />
-                            <div>Your bike for a day</div>
+                            <div>Your Car for a day</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/map.png" alt="" />
-                            <div>City App</div>
+                            <div>Inside and Outside City</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/ticket.png" alt="" />
-                            <div>Discount on Rickshaw</div>
+                            <div>Discount on group</div>
                         </div>
                         <div class="row d-flex">
                             <img src="images/support.png" alt="" />
@@ -436,7 +427,7 @@
             </div>
         </div>
 
-        <div class="footer d-grid mt-4 text-light p-5 pb-0">
+        <footer id="footer" class="footer d-grid mt-4 text-light p-5 pb-0">
             <div class="container logo">
                 <img src="../images/logo.png" alt="" srcset="" />
             </div>
@@ -496,7 +487,7 @@
             <div class="container m-0">
                 <p class="text-center">Copyright © 2022. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
 
         <script src="main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -92,24 +92,52 @@ table thead th {
 }
 
 /*  */
-/*  */
+/* Tour Packages */
 /*  */
 
-.container .row .col-sm {
+.packagesContainer .pBox {
     transition: all 0.5s;
+    width: 250px;
 }
-.container .row .col-sm:hover {
+.packagesContainer .pBox img {
+    width: 250px;
+}
+.packagesContainer .pBox:hover {
     transform: scale(1.06);
 }
-.container .row .col-sm:hover a {
+.packagesContainer .pBox a {
+    color: var(--base-color);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.packagesContainer .pBox:hover a {
     transform: translateX(15px);
+    color: var(--base-color);
 }
 @media (max-width: 780px) {
-    .container .row .col-sm {
+    .packagesContainer .pBox {
         justify-items: center;
         margin: 0 0 25px 0;
     }
-    .container h4 {
+    .packagesContainer h4 {
         text-align: center;
     }
+}
+
+.pages a {
+    width: 40px;
+    height: 40px;
+    color: var(--base-color);
+    border-radius: 50%;
+    border: 2px solid var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.pages a:hover,
+.pages .active {
+    background-color: var(--base-color);
+    color: #fff;
 }

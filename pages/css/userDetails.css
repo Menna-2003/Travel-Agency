@@ -27,6 +27,14 @@ input:focus-visible {
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#pickupLocation{
+    width: 250px;
+    height: 40px;
+    padding: 0 7px 0 20px;
+    border: 1px solid #c7c7c7;
+    margin: 10px 0 15px 0;
+    display: block;
+}
 @media (max-width: 780px) {
     .left_container input {
         width: 375px;

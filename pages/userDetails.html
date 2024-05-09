@@ -51,10 +51,10 @@
                         <a href="#" class="nav-link text-black">Contact Us</a>
                     </li>
                 </ul>
-                <div class="accounts">
+                <!-- <div class="accounts">
                     <a href="#" id="log_in" class="text-black">log in</a>
                     <button type="button" class="btn text-light">Sign Up</button>
-                </div>
+                </div> -->
             </div>
         </div>
         <nav class="navbar navbar-expand" id="navbar">
@@ -87,7 +87,7 @@
             <span>Back</span>
         </a>
         <div class="progress w-50 h-auto m-1">
-            <div class="progress-bar" role="progressbar" style="width: 00%; background-color: #fa8b02; height: 5px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #fa8b02; height: 5px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
         <div class="buttons mt-5 mb-5">
@@ -102,24 +102,35 @@
                 <div class="container">
                     <div class="row gap-lg-5 gap-sm-2">
                         <div class="col">
-                            <label for="name" class="d-block">Name</label>
-                            <input class="mt-4 mb-4" type="text" id="name" name="name" placeholder="Enter your Name" />
+                            <label for="fname" class="d-block">First Name</label>
+                            <input class="mt-4 mb-4" type="text" id="fname" name="fname" placeholder="Enter your First Name" />
                         </div>
                         <div class="col">
-                            <label for="sname" class="d-block">Surname</label>
-                            <input class="mt-4 mb-4" type="text" id="sname" name="sname" placeholder="Enter your Surname" />
+                            <label for="lname" class="d-block">Last Name</label>
+                            <input class="mt-4 mb-4" type="text" id="lname" name="lname" placeholder="Enter your Last Name" />
                         </div>
                     </div>
                     <div class="row gap-lg-5 gap-sm-2">
                         <div class="col">
                             <label for="telephone" class="d-block">Telephone Number</label>
-                            <input class="mt-4 mb-4" type="tel" id="telephone" name="telephone" placeholder="Enter your Telephone Number" />
-                        </div>
-                        <div class="col">
-                            <label for="email" class="d-block">Email Address</label>
-                            <input class="mt-4 mb-4" type="email" id="email" name="email" placeholder="Enter your Email Address" />
+                            <input class="mt-4 mb-4 w-50" type="tel" id="telephone" name="telephone" placeholder="Enter your Telephone Number" />
                         </div>
                     </div>
+                    <div class="row  gap-lg-5 gap-sm-2">
+                        <div class="col">
+                            <label for="Address" class="d-block">Address</label>
+                            <input class="mt-4 mb-4 w-100" type="text" id="Address" name="Address" placeholder="Enter your Address" />
+                        </div>
+                    </div>
+                    <label for="pickupLocation" class="d-block">Select Pickup Location</label>
+                        <select name="pickupLocation" id="pickupLocation" width="276" class="rounded">
+                            <option value="">Select...</option>
+                            <option value="">Maadi</option>
+                            <option value="">6th October</option>
+                            <option value="">Nasr City</option>
+                            <option value="">Madinty</option>
+                            <option value=""></option>
+                        </select>
                 </div>
             </form>
         </div>

@@ -101,15 +101,27 @@
         <div class="container left_container d-grid justify-content-start">
             <h4 class="mb-4" style="max-width: 300px">Select a payment method</h4>
             <form action="">
-                <div class="method1 w-auto d-flex gap-4 p-3 mb-3">
-                    <input type="radio" id="payment1" name="payments" />
-                    <label class="d-flex align-items-center" for="payment1"
-                        ><h5>PayPal</h5>
-                        <p class="w-75 m-0">You will be redirected to the PayPal website after submitting your order</p>
-                        <img src="../images/PayPal.svg" alt=""
-                    /></label>
+                <div class="method1 p-3 w-auto overflow-hidden">
+                    <div class="w-auto d-flex gap-4 p-3 mb-3">
+                        <input type="radio" id="payment1" name="payments" />
+                        <label class="d-flex align-items-center" for="payment1"
+                            ><h5>PayPal</h5>
+                            <p class="w-75 m-0">You will be redirected to the PayPal website after submitting your order</p>
+                            <img src="../images/PayPal.svg" alt="" />
+                        </label>
+                    </div>
+                    <div class="accountDetails m-4">
+                        <div class="form-outline d-inline" data-mdb-input-init>
+                            <label for="email" id="emaillabel">Username</label>
+                            <input id="email" type="email" required placeholder="example@gmail.com" />
+                        </div>
+                        <div class="form-outline d-inline ms-4" data-mdb-input-init>
+                            <label for="pass" id="passlabel">Password</label>
+                            <input id="pass" type="password" required placeholder="Enter your password" />
+                        </div>
+                    </div>
                 </div>
-                <div class="method2 p-3 w-auto overflow-hidden">
+                <div class="method2 p-3 w-auto overflow-hidden mt-2">
                     <div class="d-flex gap-4">
                         <input type="radio" id="payment2" name="payments" />
                         <label class="d-flex flex-wrap align-items-center" for="payment2">

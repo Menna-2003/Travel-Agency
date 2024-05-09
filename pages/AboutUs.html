@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tour Details</title>
-        <link rel="stylesheet" href="../style.css" />
+        <title>About Us</title>
+
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/tripDetails.css" />
-        <link rel="stylesheet" href="css/myTickets.css" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="css/payment.css" /> -->
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Open+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -24,7 +25,7 @@
             referrerpolicy="no-referrer"
         />
     </head>
-    <body>
+    <body style="min-height: 130vb">
         <span class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></span>
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -56,7 +57,6 @@
                 </div>
             </div>
         </div>
-
         <nav class="navbar navbar-expand" id="navbar">
             <div class="container">
                 <a href="#" class="navbar-brand">
@@ -82,82 +82,6 @@
                 </div>
             </div>
         </nav>
-
-        <div class="container mt-5">
-            <a href="tourPackages.html" class="backBtn container text-decoration-none">
-                <i class="fa-solid fa-arrow-left" style="color: #b0b0b0"></i>
-                <span>Back</span>
-            </a>
-            <div class="container Box1 mt-3">
-                <div class="container pictures">
-                    <div class="pic">
-                        <img src="../images/tour packages/Gardaland.png" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="details">
-                    <h1>Gardaland Tour</h1>
-                    <div class="price">from <span>40$</span></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos soluta et ut beatae facilis voluptatem ea sint, qui tempora officia, similique, labore dolorem pariatur
-                        consequatur unde minima quod laudantium.
-                    </p>
-                    <form action="">
-                        <label for="groupSize" class="d-block">Select Group Size</label>
-                        <select name="" id="groupSize" width="276" class="rounded">
-                            <option value="">Select...</option>
-                            <option value="">5 - 20</option>
-                            <option value="">20 - 50</option>
-                            <option value="">50 - 100</option>
-                        </select>
-                        <label for="transportationType" class="d-block">Select Transportation Type</label>
-                        <select name="" id="transportationType" width="276" class="rounded">
-                            <option value="">Select...</option>
-                            <option value="">Bike</option>
-                            <option value="">Car</option>
-                            <option value="">Bus</option>
-                            <option value="">Plane</option>
-                        </select>
-                        <input type="checkbox" id="guideIncluded" />
-                        <label for="groupSize">Include Guide Service?</label>
-                        <button type="submit" class="shadow mb-5 rounded d-block mt-5"><a href="../purchase/purchase.html" class="text-decoration-none text-light">Book Now</a></button>
-                    </form>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <h3>Details</h3>
-                <p style="width: 60%">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur beatae, fugit laudantium voluptates dolores, itaque sit at molestias error eum numquam! Excepturi aperiam
-                    laudantium officiis fugit saepe iusto ab officia!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur beatae, fugit laudantium voluptates dolores, itaques,
-                    itaque sit at molestias error eum numquam! Excepturi aperiam laudantium officiis fugit saepe iusto ab officia!Lorem
-                </p>
-                <div class="features mt-5">
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-user-group"></i>
-                        <p><span>Number of group : </span>15:30</p>
-                    </div>
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-hourglass"></i>
-                        <p><span>Duration : </span>15 hours</p>
-                    </div>
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-location-dot"></i>
-                        <p><span>Departuring and arriving areas: </span>Lucca</p>
-                    </div>
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-user-tie"></i>
-                        <p><span>Guide service: </span>Included</p>
-                    </div>
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-ticket"></i>
-                        <p><span>Entry Fees: </span>20$</p>
-                    </div>
-                    <div class="feature d-flex gap-3">
-                        <i style="width: 25px" class="fa-solid fa-truck-plane"></i>
-                        <p><span>EntryTransportation: </span>Bus</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <footer id="footer" class="footer d-grid mt-4 text-light p-5 pb-0">
             <div class="container logo">
@@ -220,7 +144,6 @@
                 <p class="text-center">Copyright © 2022. All rights reserved.</p>
             </div>
         </footer>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>

@@ -40,10 +40,12 @@
 .left_container .method2 label h5 {
     margin: 0 200px 0 0;
 }
-.cardDetails {
+.cardDetails,
+.accountDetails {
     position: relative;
 }
-.cardDetails input {
+.cardDetails input,
+.accountDetails input {
     width: 220px;
     height: 54px;
     padding: 25px 24px;
@@ -51,12 +53,15 @@
     border: 1px solid #c0c0c0;
     outline: none;
 }
-.cardDetails input:focus-within {
+.cardDetails input:focus-within,
+.accountDetails input:focus-within {
     border: 2px solid var(--base-color);
 }
 #ccnLabel,
 #expirydatelabel,
-#securityCodeLabel {
+#securityCodeLabel,
+#emaillabel,
+#passlabel {
     position: absolute;
     top: -14px;
     left: 11px;
@@ -65,7 +70,8 @@
     text-align: center;
     color: #787878;
 }
-#expirydatelabel {
+#expirydatelabel,
+#passlabel {
     left: 260px;
 }
 #securityCodeLabel {
